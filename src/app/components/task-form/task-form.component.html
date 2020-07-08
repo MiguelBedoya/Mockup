@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-body">
+    <form (submit)="addTask(newDate, address, name, nameDriver, newPrice)">
+      <h2 class="text-center">Registrar Entrega</h2>
+      <br>
+      <div class="form-group">
+        <label for="name"></label>
+        <input placeholder="Nombre del cliente" type="text"  class="form-control"  #name required>
+      </div>
+      <div class="form-group">
+        <label for="address"></label>
+        <input placeholder="Dirección" type="text" class="form-control" #address required>
+      </div>
+      <div class="form-group">
+        <label for="nameDriver"></label>
+        <input placeholder="Nombre del conductor" type="text" class="form-control" #nameDriver required>
+      </div>
+      <div class="form-group">
+        <label for="price"></label>
+        <input placeholder="Costo de la entrega" type="text" class="form-control" #newPrice required>
+      </div>
+      <div class="form-group">
+        <label for="newDate">Fecha de envio:</label>
+        <input type="date" class="form-control" #newDate>
+      </div>
+      <div class="form-group">
+      <button class="btn btn-primary btn-block">
+        Guardar
+      </button>
+    </div>
+    </form>
+  </div>
+</div>

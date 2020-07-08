@@ -1,0 +1,14 @@
+<div class="text-right" style="margin-bottom:4%;"><input type="text" placeholder="Buscar..."  name="filterPost"[(ngModel)]="filterPost"></div>
+<table class="table table-trapped">
+        <thead>
+          <tr>
+            <th class="text-center">Fecha de envio</th>
+            <th class="text-center">Nombre del cliente</th>
+            <th class="text-center">Dirección</th>
+            <th class="text-center">Nombre del repartidor</th>
+            <th class="text-center">Costo</th>
+            <th class="text-center">Acciones</th>
+          </tr>
+        </thead>
+</table>
+<app-task *ngFor="let task of tasks | filter:filterPost" [task]="task"></app-task>

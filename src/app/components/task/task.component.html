@@ -1,0 +1,20 @@
+<div class="card mb-3">
+  <div class="card-body row no-gutters">
+    <table class="table table-trapped">
+      <tbody>
+        <tr>
+            <td class="text-left">{{task.date | date:'EEEE d - h:mm a'}}</td>
+            <td class="text-left">{{task.name}}</td>
+            <td class="text-left">{{task.address}}</td>
+            <td class="text-left">{{task.nameDriver}}</td>
+            <td class="text-left">${{task.price}}</td>
+            <td class="text-left">
+                <button class="btn btn-danger" (click)="deleteTask(task)" aria-label="closed">
+                    &times;
+                  </button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
